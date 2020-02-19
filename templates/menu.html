@@ -1,0 +1,12 @@
+<!doctype html>
+<title>Menu example</title>
+{% if name %}
+  <h1>Hello {{ name }}!</h1>
+{% else %}
+  <h1>Hello, World!</h1>
+{% endif %}
+
+<h2>Navigáció</h2>
+<a href="{{url_for('show_user_profile', username='Lete')}}">{{url_for('show_user_profile', username='Lete')}}</a> <br/>
+<a href="{{url_for('show_post', post_id=12)}}">{{url_for('show_post', post_id=12)}}</a> <br/>
+<a href="{{url_for('hello')}}">{{url_for('hello')}}</a> <br/>
